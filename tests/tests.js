@@ -1,5 +1,5 @@
 import './html-equal.js';
-import makeHTMLtemplate from '../src/make-html-template.js'
+import makeLiTemplate from '../src/make-li-template.js';
 
 const test = QUnit.test;
 QUnit.module('manipulating html by creating templates');
@@ -29,7 +29,7 @@ test('testing html template creation function', assert => {
   const expected = '<li><h2>UniWhal</h2><img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"></li>'; 
   
   //Act
-  const result = makeHTMLtemplate(imgObject);
+  const result = makeLiTemplate(imgObject);
   //Assert
   assert.htmlEqual(result, expected);
 });
