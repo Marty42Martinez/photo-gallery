@@ -1,12 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background: rgb(116, 7, 131);
+  text-align: center;
+  height: 5rem;
+  border: 5px solid rgb(173, 15, 194);
+}
+h1 {
+  font-size: 40px;
+}
+
+body {
+  background: rgb(9, 159, 204);
+}
+#image-list {
+  margin: 20px;
+}
+
 #image-list li {
   list-style: none;
   display: inline-block;
   height: 200px;
   width: 150px;
-  border: 2px solid black;
+  border: 3px outset rgb(173, 15, 194);
   margin: 5px;
+  background: tan;
 }
-
+#image-list h2 {
+  font-size: 16px;
+  text-transform: capitalize;
+  height: 30px;
+  text-align: center;
+  color: rgb(116, 7, 131);
+}
 #image-list img {
   width: 100%;
   height: 125px;
